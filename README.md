@@ -67,6 +67,14 @@ output := gtm.Render("home/index.html", map[string]interface{}{
 })
 ```
 
+Example:
+
+```html
+<div>
+    {{ .title }}
+</div>
+```
+
 ### Render with Data and Functions
 
 ```go
@@ -79,6 +87,14 @@ output := gtm.Render("home/index.html", map[string]interface{}{
 ```
 
 The function `sayHi` will be available in the view and you can use it by calling it inside the view file like `{{ sayHi }}`.
+
+Example:
+
+```html
+<div>
+    {{ sayHi }}
+</div>
+```
 
 ## Layouts
 
